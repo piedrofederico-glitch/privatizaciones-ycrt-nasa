@@ -46,7 +46,9 @@ python3 -I R/herramientas/mail.py --para pedro.rossaroli@mitranicaballero.com \
   --html /home/user/salida/E/mail.html --adjunto <pdf1> --adjunto <pdf2> ...
 ```
 Adjuntá solo los PDF de lo que es novedad (no los del ruido descartado). Las circulares, actas y dictámenes de CONTRAT.AR que vienen como `.txt` van resumidas en el cuerpo del mail; si la circular trae un PDF anexo, adjuntalo.
-Si `mail.py` sale con código 3 (faltan credenciales) o 4 (error de la API), mandá el mismo contenido con la herramienta de Gmail del conector (`send_message`, cargala con ToolSearch) **sin adjuntos**, poniendo en cada novedad el link para bajar el PDF (BORA: `https://www.boletinoficial.gob.ar/pdf/aviso/primera/<id>/<fecha>`; CONTRAT.AR: la `url_ficha`). Agregá al final una línea indicando que los adjuntos fallaron y el motivo.
+Si `mail.py` sale con código 3 (faltan credenciales) o 4 (error de la API):
+- Si la sesión tiene la herramienta de Gmail del conector (buscala con ToolSearch "gmail send"), mandá el mismo contenido **sin adjuntos**, poniendo en cada novedad el link para bajar el PDF (BORA: `https://www.boletinoficial.gob.ar/pdf/aviso/primera/<id>/<fecha>`; CONTRAT.AR: la `url_ficha`), y agregá al final una línea con el motivo de la falla.
+- Si no la tiene, el resumen final (paso 7) debe empezar con "MAIL NO ENVIADO", el motivo y las novedades con sus links, para que lleguen por la notificación. La entrada del registro se escribe igual.
 
 ## 6. Commit y push
 ```
