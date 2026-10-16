@@ -1,0 +1,24 @@
+{
+ "nombre": "Nucleoeléctrica Argentina S.A. (NASA)",
+ "terminos_contratar": [
+  "Nucleoeléctrica",
+  "Nucleoelectrica",
+  "Atucha",
+  "Embalse",
+  "Nuclear",
+  "acciones",
+  "Venta de"
+ ],
+ "terminos_bora": [
+  "Nucleoel[eé]ctrica",
+  "\\bNASA\\b",
+  "Atucha",
+  "Central\\s+Nuclear"
+ ],
+ "excluir_procesos": [
+  "504/2-0001-CPU25",
+  "504/2-0002-CPU25",
+  "504/2-0002-LPU26",
+  "504/2-0003-LPU26"
+ ]
+}

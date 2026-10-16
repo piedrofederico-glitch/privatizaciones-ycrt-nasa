@@ -1,0 +1,29 @@
+{
+ "nombre": "Comisión Nacional de Energía Atómica (CNEA)",
+ "terminos_contratar": [
+  "Energía Atómica",
+  "Uranio",
+  "RA-10",
+  "Sierra Pintada",
+  "Cerro Solo",
+  "Iniciativa Privada",
+  "Dioxitek"
+ ],
+ "terminos_bora": [
+  "Comisi[oó]n\\s+Nacional\\s+de\\s+Energ[ií]a\\s+At[oó]mica",
+  "\\bCNEA\\b",
+  "RA-?10",
+  "Sierra\\s+Pintada",
+  "Cerro\\s+Solo",
+  "Laguna\\s+Colorada",
+  "Don\\s+Otto",
+  "Dioxitek",
+  "uranio"
+ ],
+ "excluir_procesos": [
+  "504/2-0001-CPU25",
+  "504/2-0002-CPU25",
+  "504/2-0002-LPU26",
+  "504/2-0003-LPU26"
+ ]
+}

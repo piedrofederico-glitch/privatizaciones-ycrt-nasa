@@ -1,0 +1,26 @@
+{
+ "nombre": "ENARSA (resto de activos: UTE Escobar, Enarsa Patagonia, Vientos de la Patagonia I)",
+ "terminos_contratar": [
+  "ENARSA",
+  "Energía Argentina",
+  "Vientos de la Patagonia",
+  "Enarsa Patagonia",
+  "Escobar",
+  "Regasificadora",
+  "acciones",
+  "Venta de"
+ ],
+ "terminos_bora": [
+  "\\bENARSA\\b",
+  "Energ[ií]a\\s+Argentina\\s+S(ociedad)?\\.?\\s*A(n[oó]nima)?",
+  "Vientos\\s+de\\s+la\\s+Patagonia",
+  "Enarsa\\s+Patagonia",
+  "Escobar"
+ ],
+ "excluir_procesos": [
+  "504/2-0001-CPU25",
+  "504/2-0002-CPU25",
+  "504/2-0002-LPU26",
+  "504/2-0003-LPU26"
+ ]
+}

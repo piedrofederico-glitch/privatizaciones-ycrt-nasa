@@ -1,0 +1,24 @@
+{
+ "nombre": "Carboeléctrica Río Turbio S.A. (ex YCRT)",
+ "terminos_contratar": [
+  "Río Turbio",
+  "Rio Turbio",
+  "Carboeléctrica",
+  "YCRT",
+  "Carbonífero",
+  "acciones",
+  "Venta de"
+ ],
+ "terminos_bora": [
+  "R[ií]o\\s+Turbio",
+  "\\bYCRT\\b",
+  "Carboel[eé]ctrica",
+  "Yacimientos?\\s+Carbon[ií]feros?"
+ ],
+ "excluir_procesos": [
+  "504/2-0001-CPU25",
+  "504/2-0002-CPU25",
+  "504/2-0002-LPU26",
+  "504/2-0003-LPU26"
+ ]
+}

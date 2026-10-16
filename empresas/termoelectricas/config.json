@@ -1,0 +1,27 @@
+{
+ "nombre": "Termoeléctricas de ENARSA (Manuel Belgrano, José de San Martín, Guillermo Brown)",
+ "terminos_contratar": [
+  "Termoeléctrica",
+  "Termoelectrica",
+  "Manuel Belgrano",
+  "Timbúes",
+  "Guillermo Brown",
+  "Central Térmica",
+  "acciones",
+  "Venta de"
+ ],
+ "terminos_bora": [
+  "Termoel[eé]ctrica\\s+Manuel\\s+Belgrano",
+  "Termoel[eé]ctrica\\s+Jos[eé]\\s+de\\s+San\\s+Mart[ií]n",
+  "Guillermo\\s+Brown",
+  "Timb[uú]es",
+  "FONINVEMEM",
+  "Central(es)?\\s+Termoel[eé]ctrica"
+ ],
+ "excluir_procesos": [
+  "504/2-0001-CPU25",
+  "504/2-0002-CPU25",
+  "504/2-0002-LPU26",
+  "504/2-0003-LPU26"
+ ]
+}
