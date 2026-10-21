@@ -7,7 +7,7 @@ El orquestador te pasa la **hora límite del mail** (06:00, 15:30 o 18:00). El m
 Leé antes `R/empresas/E/contexto.md` y las últimas entradas de `R/empresas/E/registro.md`.
 
 ## 1. Boletín Oficial
-El orquestador ya escaneó el BORA para todas las empresas. Leé `/home/user/salida/E/bora.json`: `coincidencias` trae solo los avisos que coinciden con tus términos y que nunca se habían visto, con el texto (`.txt`) y el PDF ya bajados.
+El orquestador ya escaneó el BORA para todas las empresas: la primera sección completa y, de la segunda sección (sociedades), los edictos cuya razón social coincide con tus términos (asambleas, reformas de estatuto, aumentos de capital, cambios de directorio). Leé `/home/user/salida/E/bora.json`: `coincidencias` trae solo los avisos que coinciden con tus términos y que nunca se habían visto, con el texto (`.txt`) y el PDF ya bajados.
 Por cada coincidencia, leé el `.txt` y decidí si es novedad según `CLAUDE.md`. Muchas coincidencias son ruido (por ejemplo, designaciones de personal en la CNEA): descartalas sin registrar.
 
 ## 2. CONTRAT.AR
