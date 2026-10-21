@@ -1,12 +1,12 @@
 # Orquestador: corrida de todas las empresas
 
-Corre de lunes a viernes en tres turnos. La hora límite es la hora a la que tiene que haber salido cada mail:
+Corre de lunes a viernes en tres turnos. La hora límite es la hora a la que tiene que haber salido cada mail. El servidor suele arrancar la tarea entre 5 y 10 minutos después del horario programado:
 
 | Turno | Arranque | Hora límite del mail | `--dias` del BORA |
 |---|---|---|---|
-| Mañana | 05:30 | 06:00 | 3 los lunes, 1 el resto |
-| Tarde | 15:00 | 15:30 | 0 |
-| Noche | 17:30 | 18:00 | 0 |
+| Mañana | 05:20 | 06:00 | 3 los lunes, 1 el resto |
+| Tarde | 14:50 | 15:30 | 0 |
+| Noche | 17:20 | 18:00 | 0 |
 
 Empresas: `termoelectricas`, `enarsa`, `nasa`, `cnea`, `ycrt`, `belgrano-cargas` (todas las carpetas de `empresas/`).
 
