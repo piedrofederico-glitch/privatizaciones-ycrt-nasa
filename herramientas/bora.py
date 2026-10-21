@@ -10,6 +10,10 @@ compara contra las expresiones regulares `terminos_bora` del config.json de cada
 aviso que coincide y no figura en el estado.json de esa empresa baja el texto (.txt) y el PDF
 oficial a <salida>/<empresa>/bora/, lo marca como visto y deja el detalle en
 <salida>/<empresa>/bora.json. Imprime un resumen por empresa.
+Si el BORA no responde, la primera sección del día se revisa en BOA (boa.com.ar): solo la edición
+del día, con resúmenes en lugar del texto completo y sin PDF; esas coincidencias llevan 'fuente': 'BOA'
+y 'pdf_url'. Los avisos de BOA sin coincidencia no se marcan, para revisarlos con el texto completo
+cuando el BORA vuelva (por eso conviene --dias 1 en la corrida siguiente).
 La segunda sección (sociedades: edictos de asambleas, reformas de estatuto, aumentos de capital,
 directorios) trae cientos de avisos por día: de esa sección solo se abren los avisos cuyo renglón
 del sumario (razón social) coincide con los términos; en el estado se guardan como "s2:<id>". --dias N revisa también los N días anteriores
@@ -66,6 +70,24 @@ def aviso(id_, fecha, seccion='primera'):
     return titulo, cuerpo
 
 
+def sumario_boa(fecha):
+    """Respaldo de la primera sección cuando el BORA no responde: https://boa.com.ar/ (resumen privado del BORA).
+    Solo publica la edición del día (sin archivo ni segunda sección) y trae un resumen hecho con IA, no el texto.
+    Devuelve [(id, organismo, norma, codigo, resumen)] si la edición publicada es la de `fecha`."""
+    r = urllib.request.urlopen(urllib.request.Request('https://boa.com.ar/', headers={'User-Agent': 'Mozilla/5.0'}), timeout=90)
+    t = r.read().decode('utf-8', 'ignore')
+    out = []
+    for bloque in re.split(r'<div class="item[ "]', t)[1:]:
+        m = re.search(r'detalleAviso/primera/(\d+)/(\d{8})', bloque)
+        if not m or m.group(2) != fecha:
+            continue
+        campo = lambda c: limpio((re.search(rf'(?s)<div class="{c}">(.*?)</div>', bloque) or [None, ''])[1])
+        out.append((m.group(1), campo('entity'), campo('norm'), campo('code'), campo('summary').replace('Resumen:', '').strip()))
+    if not out:
+        raise RuntimeError(f'BOA no tiene la edición del {fecha} (solo publica la del día)')
+    return list(dict((o[0], o) for o in out).values())
+
+
 def url_aviso(id_, fecha, seccion='primera'):
     return f'{BASE}/detalleAviso/{seccion}/{id_}/{fecha}'
 
@@ -88,17 +110,53 @@ def escanear(empresas, salida, fecha, dias):
                          'salida': os.path.join(salida, nombre_e, 'bora'),
                          'res': {'coincidencias': [], 'fechas_revisadas': [], 'errores': []}}
     base = datetime.datetime.strptime(fecha, '%Y%m%d').date()
+    # si hubo días sin BORA oficial (caído o solo BOA), se retrocede hasta el último leído (máximo 7)
+    ultimas = [x['est']['bora'].get('ultima_ok') for x in emp.values()]
+    if all(ultimas):
+        atraso = (base - datetime.datetime.strptime(min(ultimas), '%Y%m%d').date()).days
+        dias = max(dias, min(atraso, 7))
     for d in range(dias, -1, -1):
         f = (base - datetime.timedelta(days=d)).strftime('%Y%m%d')
         for seccion in ('primera', 'segunda'):
+            fuente = 'BORA'
             try:
                 items = sumario(f, seccion)
             except Exception as ex:
-                for x in emp.values():
-                    x['res']['errores'].append(f'sumario {seccion} {f}: {ex}')
-                continue
+                if seccion == 'segunda':
+                    for x in emp.values():
+                        x['res']['errores'].append(f'sumario segunda {f}: {ex} (BOA no publica la segunda sección: buscar edictos por la web)')
+                    continue
+                try:
+                    items = sumario_boa(f); fuente = 'BOA'
+                    for x in emp.values():
+                        x['res']['errores'].append(f'BORA sin respuesta ({ex}); primera sección del {f} revisada en BOA (resúmenes, sin texto completo ni PDF)')
+                except Exception as ex2:
+                    for x in emp.values():
+                        x['res']['errores'].append(f'sumario primera {f}: BORA {ex}; BOA {ex2}')
+                    continue
             for x in emp.values():
-                x['res']['fechas_revisadas'].append(f'{f} {seccion} ({len(items)} avisos)')
+                x['res']['fechas_revisadas'].append(f'{f} {seccion} ({len(items)} avisos, {fuente})')
+                if fuente == 'BORA' and seccion == 'primera' and f > x['est']['bora'].get('ultima_ok', ''):
+                    x['est']['bora']['ultima_ok'] = f
+            if fuente == 'BOA':
+                for id_, org, norma, cod, resumen in items:
+                    texto = f'{org}\n{norma}\n{cod}\nResumen de BOA (no es el texto oficial): {resumen}'
+                    nombre = re.sub(r'[^\w.\-]+', '_', f'{f}_primera_{id_}_{norma or org}')[:100]
+                    for k, x in emp.items():
+                        b = x['est']['bora']
+                        if id_ in b['vistos'] or id_ in b['revisados'].get(f, []):
+                            continue
+                        hits = sorted({m.group(0) for p in x['pats'] for m in p.finditer(texto)})
+                        if not hits:
+                            continue  # sin marcar: cuando vuelva el BORA se revisa con el texto completo
+                        os.makedirs(x['salida'], exist_ok=True)
+                        open(os.path.join(x['salida'], nombre + '.txt'), 'w').write(f'{url_aviso(id_, f)}\n\n{texto}')
+                        b['vistos'][id_] = f
+                        x['res']['coincidencias'].append({'id': id_, 'seccion': 'primera', 'fecha': f, 'organismo': org,
+                                                          'norma': norma, 'codigo': cod, 'terminos': hits, 'fuente': 'BOA',
+                                                          'url': url_aviso(id_, f), 'texto': os.path.join(x['salida'], nombre + '.txt'),
+                                                          'pdf': None, 'pdf_url': f'{BASE}/pdf/aviso/primera/{id_}/{f}', 'anexos': ''})
+                continue
             for id_, org, norma, cod in items:
                 clave = id_ if seccion == 'primera' else f's2:{id_}'
                 renglon = f'{org}\n{norma}\n{cod}'

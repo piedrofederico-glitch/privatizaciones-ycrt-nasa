@@ -10,6 +10,10 @@ Leé antes `R/empresas/E/contexto.md` y las últimas entradas de `R/empresas/E/r
 El orquestador ya escaneó el BORA para todas las empresas: la primera sección completa y, de la segunda sección (sociedades), los edictos cuya razón social coincide con tus términos (asambleas, reformas de estatuto, aumentos de capital, cambios de directorio). Leé `/home/user/salida/E/bora.json`: `coincidencias` trae solo los avisos que coinciden con tus términos y que nunca se habían visto, con el texto (`.txt`) y el PDF ya bajados.
 Por cada coincidencia, leé el `.txt` y decidí si es novedad según `CLAUDE.md`. Muchas coincidencias son ruido (por ejemplo, designaciones de personal en la CNEA): descartalas sin registrar.
 
+**Si el BORA no respondió** (mirá `errores` y `fechas_revisadas` en `bora.json`):
+- **Primera sección:** el escáner la revisó en BOA (https://boa.com.ar/), un resumen privado del BORA que solo publica la edición del día. Las coincidencias de BOA traen `"fuente": "BOA"`, un resumen hecho con IA en lugar del texto oficial y ningún PDF. Usá BOA **solo como respaldo**: en el registro y en el mail aclará "según el resumen de BOA; texto oficial no verificado", y en lugar de adjuntar el PDF poné el link `pdf_url`. Intentá abrir el aviso del BORA con WebFetch por si responde de esa vía; si lo lográs, usá el texto oficial y sacá la aclaración.
+- **Segunda sección:** BOA no la publica. Buscá con WebSearch edictos societarios de la empresa de los últimos días (por ejemplo, "<razón social> edicto Boletín Oficial asamblea", "<razón social> aumento de capital estatuto"). Si la prensa menciona un edicto, registralo como "reportado por prensa; aviso del BORA no verificado" e indicá la fecha y, si se conoce, el número de edicto.
+
 ## 2. CONTRAT.AR
 ```
 python3 -I R/herramientas/contratar.py revisar --empresa R/empresas/E --salida /home/user/salida/E/contratar
