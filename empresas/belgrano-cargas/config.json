@@ -1,0 +1,26 @@
+{
+ "nombre": "Belgrano Cargas y Logística S.A. (BCyL)",
+ "terminos_contratar": [
+  "Belgrano Cargas",
+  "vías e inmuebles",
+  "inmuebles aledaños",
+  "Material rodante",
+  "Talleres ferroviarios",
+  "Ferrocarril",
+  "Concesión ferroviaria"
+ ],
+ "terminos_bora": [
+  "Belgrano\\s+Cargas",
+  "\\bBCyL\\b",
+  "504/2-0004-LPU26",
+  "red\\s+ferroviaria\\s+de\\s+cargas",
+  "concesi[oó]n\\s+ferroviaria",
+  "l[ií]neas?\\s+Belgrano,?\\s+San\\s+Mart[ií]n\\s+y\\s+Urquiza"
+ ],
+ "excluir_procesos": [
+  "504/2-0001-CPU25",
+  "504/2-0002-CPU25",
+  "504/2-0002-LPU26",
+  "504/2-0003-LPU26"
+ ]
+}

@@ -192,8 +192,8 @@ def bajar(it, url_ficha, t, destino):
         m = re.search(r'filename=([^;]+)', g.args[1].get('Content-Disposition') or '')
         return None, f"{urllib.parse.unquote(m.group(1)).strip(chr(34)) if m else it['tipo']}: pesa {g.args[0]}, no se baja (tope {MAX_MB} MB)"
     m = re.search(r'filename=([^;]+)', hd.get('Content-Disposition') or '')
-    if b[:4] != b'%PDF':
-        return None, f"respuesta no PDF ({hd.get('Content-Type')})"
+    if not m and b[:4] != b'%PDF':  # sin nombre de archivo: el portal devolvió la página, no el documento
+        return None, f"respuesta sin archivo ({hd.get('Content-Type')})"
     fn = seguro(urllib.parse.unquote(m.group(1)).strip('"') if m else it['tipo'] + '.pdf')
     open(os.path.join(destino, fn), 'wb').write(b)
     return fn, ''

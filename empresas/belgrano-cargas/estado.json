@@ -1,0 +1,33 @@
+{
+ "bora": {
+  "revisados": {},
+  "vistos": {
+   "349190": "20261019"
+  }
+ },
+ "contratar": {
+  "descartados": [],
+  "procesos": {
+   "504/2-0004-LPU26": {
+    "desde": "2026-10-21",
+    "estado": "Publicado",
+    "nombre": "Concesión de vías e inmuebles aledaños de LB, LSM y LU.",
+    "termino": "inmuebles aledaños",
+    "ultima_revision": "2026-10-21",
+    "vistos": {
+     "acto:Autorización llamado RS-2026-79872275-APN-MEC RESOL-2026-1350-MEC 19/08/2026": "2026-10-21",
+     "acto:Autorización pliego RS-2026-79872275-APN-MEC RESOL-2026-1350-MEC 19/08/2026": "2026-10-21",
+     "anexo:PBCG - Anexo 5.17 - Modelo economico financiero.xlsx Otros Anexo 5.17 del Pliego de Bases y Condiciones Generales (PLIEG-2026-79595975-APN-ST#MEC)": "2026-10-21",
+     "anexo:PBCP - LB - Anexo 9 - Planilla cotizacion LB.xlsx Otros Anexo 9 del Pliego de Bases y Condiciones Particulares de la Línea Belgrano (PLIEG-2026-79596208-APN-ST#MEC)": "2026-10-21",
+     "anexo:PBCP - LSM - Anexo 9 - Planilla cotizacion LSM .xlsx Otros Anexo 9 del Pliego de Bases y Condiciones Particulares de la Línea San Martín (PLIEG-2026-79596056-APN-ST#MEC)": "2026-10-21",
+     "anexo:PBCP - LSM - PLIEG-2026-79596056-APN-ST#MEC.pdf Otros Pliego de Bases y Condiciones Particulares de la Línea San Martín (PLIEG-2026-79596056-APN-ST#MEC)": "2026-10-21",
+     "anexo:PBCP - LU - PLIEG-2026-79596095-APN-ST#MEC.pdf Otros Pliego de Bases y Condiciones Particulares de la Línea Urquiza (PLIEG-2026-79596095-APN-ST#MEC)": "2026-10-21",
+     "anexo:PBCP- LU - Anexo 9 - Planilla cotizacion LU .xlsx Otros Anexo 9 del Pliego de Bases y Condiciones Particulares de la Línea Urquiza (PLIEG-2026-79596095-APN-ST#MEC)": "2026-10-21",
+     "anexo:PETG - PLIEG-2026-79596251-APN-ST#MEC.pdf Otros Pliego de Especificaciones Técnicas Generales (PLIEG-2026-79596251-APN-ST#MEC)": "2026-10-21",
+     "circular:1 31/08/2026 Sin consulta": "2026-10-21",
+     "condiciones_generales:Condiciones Generales PLIEG-2026-79595975-APN-ST#MEC 19/08/2026": "2026-10-21"
+    }
+   }
+  }
+ }
+}

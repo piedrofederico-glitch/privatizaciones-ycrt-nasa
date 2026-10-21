@@ -1,14 +1,13 @@
-# Corrida diaria de un agente
+# Corrida de una empresa (subagente)
 
-`E` es la carpeta de la empresa (`termoelectricas`, `enarsa`, `nasa`, `cnea` o `ycrt`). El repo está clonado en `/home/user/privatizaciones-ycrt-nasa` (en adelante `R`). Los documentos bajados van a `/home/user/salida/E/`, **fuera del repo**: nunca los commitees.
+Lo ejecuta un subagente lanzado por el orquestador (`docs/orquestador.md`), uno por empresa y en paralelo. `E` es la carpeta de la empresa (`termoelectricas`, `enarsa`, `nasa`, `cnea`, `ycrt` o `belgrano-cargas`). El repo está en `/home/user/privatizaciones-ycrt-nasa` (en adelante `R`). Los documentos bajados van a `/home/user/salida/E/`, **fuera del repo**: nunca los commitees. **No hagas commit ni push**: lo hace el orquestador al final.
+
+El orquestador te pasa la **hora límite del mail** (06:00, 15:30 o 18:00). El mail tiene que salir antes de esa hora aunque no hayas terminado las búsquedas web: priorizá BORA y CONTRAT.AR.
 
 Leé antes `R/empresas/E/contexto.md` y las últimas entradas de `R/empresas/E/registro.md`.
 
 ## 1. Boletín Oficial
-```
-python3 -I R/herramientas/bora.py escanear --empresa R/empresas/E --salida /home/user/salida/E/bora --dias D
-```
-`D` es 3 los lunes y 1 el resto de los días (cubre avisos que salieron después de la corrida anterior; los ya leídos se saltean solos).
+El orquestador ya escaneó el BORA para todas las empresas. Leé `/home/user/salida/E/bora.json`: `coincidencias` trae solo los avisos que coinciden con tus términos y que nunca se habían visto, con el texto (`.txt`) y el PDF ya bajados.
 Por cada coincidencia, leé el `.txt` y decidí si es novedad según `CLAUDE.md`. Muchas coincidencias son ruido (por ejemplo, designaciones de personal en la CNEA): descartalas sin registrar.
 
 ## 2. CONTRAT.AR
@@ -24,7 +23,7 @@ python3 -I R/herramientas/contratar.py revisar --empresa R/empresas/E --salida /
 - `errores`: el portal es inestable y el script ya reintenta. Si persiste, mencionalo en el mail en una línea.
 
 ## 3. Prensa, Justicia y Legislaturas
-Hacé varias búsquedas con WebSearch (sugerencias en `contexto.md`) para hechos judiciales y legislativos de los últimos días, y para actos oficiales que no estén en el BORA ni en CONTRAT.AR. Leé con WebFetch las notas que uses; si un sitio no carga el cuerpo, usá título y copete. Descartá lo que ya figura en `registro.md`.
+Hacé varias búsquedas con WebSearch (sugerencias en `contexto.md`) para hechos judiciales y legislativos y para actos oficiales que no estén en el BORA ni en CONTRAT.AR. Ventana: desde la corrida anterior (las corridas son 06:00, 15:30 y 18:00 de lunes a viernes). Leé con WebFetch las notas que uses; si un sitio no carga el cuerpo, usá título y copete. **Descartá todo lo que ya figura en `registro.md`**, aunque salga en una nota nueva: es lo que evita repetir mails entre corridas del mismo día.
 
 ## 4. Registro
 Por cada novedad, agregá una entrada en `R/empresas/E/registro.md` debajo de la marca `<!-- nuevas entradas debajo de esta línea -->` (la más reciente arriba):
@@ -39,22 +38,14 @@ Si un hecho cambia la situación de base, actualizá también `contexto.md`.
 
 ## 5. Mail (solo si hubo novedades)
 Si no hubo ninguna novedad, no mandes mail.
-Armá `/home/user/salida/E/mail.html` con un bloque por novedad (mismo contenido que el registro, en HTML simple: `<h3>`, `<p>`, `<ul>`, `<b>`, `<a>`) y una sección final "Fuentes" con el formato Medio | Título (con link) | DD/MM/AAAA. Mandalo con los PDF de las novedades:
+Armá `/home/user/salida/E/mail.html` con un bloque por novedad (mismo contenido que el registro, en HTML simple: `<h3>`, `<p>`, `<ul>`, `<b>`, `<a>`) y una sección final "Fuentes" con el formato Medio | Título (con link) | DD/MM/AAAA. Mandalo con los documentos de las novedades:
 ```
 python3 -I R/herramientas/mail.py --para pedro.rossaroli@mitranicaballero.com \
-  --asunto "[<Nombre corto de la empresa>] <hecho principal> · DD/MM/AAAA" \
-  --html /home/user/salida/E/mail.html --adjunto <pdf1> --adjunto <pdf2> ...
+  --asunto "[<Nombre corto de la empresa>] <hecho principal> · DD/MM/AAAA HH:MM" \
+  --html /home/user/salida/E/mail.html --adjunto <archivo1> --adjunto <archivo2> ...
 ```
-Adjuntá solo los PDF de lo que es novedad (no los del ruido descartado). Las circulares, actas y dictámenes de CONTRAT.AR que vienen como `.txt` van resumidas en el cuerpo del mail; si la circular trae un PDF anexo, adjuntalo.
-Si `mail.py` sale con código 3 (faltan credenciales) o 4 (error de la API):
-- Si la sesión tiene la herramienta de Gmail del conector (buscala con ToolSearch "gmail send"), mandá el mismo contenido **sin adjuntos**, poniendo en cada novedad el link para bajar el PDF (BORA: `https://www.boletinoficial.gob.ar/pdf/aviso/primera/<id>/<fecha>`; CONTRAT.AR: la `url_ficha`), y agregá al final una línea con el motivo de la falla.
-- Si no la tiene, el resumen final (paso 7) debe empezar con "MAIL NO ENVIADO", el motivo y las novedades con sus links, para que lleguen por la notificación. La entrada del registro se escribe igual.
+Adjuntá solo los archivos de lo que es novedad (PDF, y planillas u otros anexos si los hay), no los del ruido descartado. Las circulares, actas y dictámenes de CONTRAT.AR que vienen como `.txt` van resumidas en el cuerpo del mail; si la circular trae un anexo, adjuntalo.
+Si `mail.py` sale con código 3 (faltan credenciales) o 4 (error de la API), devolvé al orquestador "MAIL NO ENVIADO", el motivo y las novedades con sus links (BORA: `https://www.boletinoficial.gob.ar/pdf/aviso/primera/<id>/<fecha>`; CONTRAT.AR: la `url_ficha`). La entrada del registro se escribe igual.
 
-## 6. Commit y push
-```
-cd R && git add empresas/E && git commit -m "E: corrida DD/MM/AAAA" && git pull --rebase origin main && git push origin main
-```
-Commiteá siempre que haya cambiado `estado.json`, aunque no haya novedades: es la memoria de la próxima corrida. Si el push choca con otro agente, repetí `git pull --rebase origin main` y `git push` (hasta 4 intentos).
-
-## 7. Cierre
-Terminá con un resumen de 2 o 3 líneas: novedades encontradas (o "sin novedades"), si se mandó el mail y con cuántos adjuntos, y cualquier error. Ese resumen llega como notificación al celular.
+## 6. Respuesta al orquestador
+Devolvé en 2 o 3 líneas: novedades encontradas (o "sin novedades"), si se mandó el mail y con cuántos adjuntos, y cualquier error.

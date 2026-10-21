@@ -1,6 +1,6 @@
-# Seguimiento de privatizaciones: termoeléctricas, ENARSA, NASA, CNEA, YCRT
+# Seguimiento de privatizaciones: termoeléctricas, ENARSA, NASA, CNEA, YCRT, Belgrano Cargas
 
-Cinco agentes independientes (tareas programadas de Claude Code, lunes a viernes) siguen cada uno una empresa. Cada corrida recibe el nombre de su carpeta en `empresas/` y sigue `docs/corrida-diaria.md`.
+Una tarea programada orquestadora corre de lunes a viernes en tres turnos (mails a las 06:00, 15:30 y 18:00) y sigue `docs/orquestador.md`: escanea el BORA una vez para todas las empresas, lanza un subagente por empresa en paralelo (cada uno sigue `docs/corrida-diaria.md` con su carpeta de `empresas/`) y hace un único commit y push.
 
 Destinatario: Pedro, estudiante de derecho en un estudio jurídico de Buenos Aires. Usa los mails como insumo propio y decide qué lleva al Comité del estudio.
 
