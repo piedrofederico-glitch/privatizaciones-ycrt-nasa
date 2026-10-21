@@ -4,6 +4,18 @@ Entradas más recientes arriba. Cada entrada resume un documento o hecho nuevo; 
 
 <!-- nuevas entradas debajo de esta línea -->
 
+## 21/10/2026 · Presentación judicial anunciada y ordenanza municipal · Ordenanza 022/2026 de Tafí Viejo
+- **Fuente:** Nexos Digital | https://nexosdigital.com.ar/2026/10/21/tafi-viejo-recurrira-a-la-justicia-federal-para-impedir-que-los-talleres-ferroviarios-sean-privatizados/ ; La Gaceta | https://www.lagaceta.com.ar/nota/1158906/politica/tafi-viejo-prepara-accion-judicial-para-defender-talleres-ferroviarios.html
+- **Qué dice:** El Concejo Deliberante de Tafí Viejo (Tucumán) aprobó por unanimidad (12 concejales, sesión extraordinaria de un lunes, probablemente 19/10/2026, fecha inferida) la **Ordenanza 022/2026**, que habilita a la Municipalidad a ir a la Justicia contra la Resolución 1761/2026 del Ministerio de Economía. **Anunciada:** la Municipalidad presentaría una acción en la Justicia Federal "en los próximos días" para impedir que los Talleres Ferroviarios (unas 23 ha) se incorporen a la privatización de BCyL; si la Nación mantiene la medida, promovería un amparo por su nulidad. Reclama además aclarar la titularidad del predio (donación a la Provincia acordada en los años 90 y nunca formalizada). Aún no se informa juzgado ni expediente.
+- **Próximos pasos:** presentación judicial anunciada, sin fecha.
+- **PDF enviado por mail:** no hay PDF
+
+## 10/2026 · Resolución del Ministerio de Economía · 1761/2026
+- **Fuente:** prensa tucumana (El Tributuc, Examedia, La Gaceta; texto de la resolución no abierto) | https://www.eltributuc.com.ar/privatizacion-ferroviaria-el-gobierno-asigno-los-talleres-de-tafi-viejo-a-belgrano-cargas/
+- **Qué dice:** **Asigna a BCyL parte de los inmuebles del Taller de Mantenimiento Pesado de Vagones de Tafí Viejo** (solo los polígonos definidos por BCyL como necesarios; predio total de 229.468,71 m²), para viabilizar una posterior concesión de uso a operadores privados. Ratifica la Resolución 19/2026 de la AABE (14/01/2026). Discrepancia: las fuentes no coinciden en la fecha de publicación en el BO (una indica el 08/10/2026); no verificada.
+- **Próximos pasos:** concesión de uso a privados aún no definida (procedimiento de talleres pendiente).
+- **PDF enviado por mail:** no hay PDF
+
 ## 21/10/2026 · Hecho de procedimiento (retiro de oferente) · Licitación 504/2-0004-LPU26
 - **Fuente:** Infobae | https://www.infobae.com/economia/2026/10/21/privatizacion-del-belgrano-cargas-el-unico-oferente-extranjero-abandono-la-licitacion-a-tres-semanas-de-que-se-defina/ ; La Nación | https://www.lanacion.com.ar/economia/grupo-mexico-aviso-que-no-competira-para-quedarse-con-la-privatizacion-del-belgrano-cargas-nid21102026/
 - **Qué dice:** **Grupo México Transportes comunicó que no presentará oferta** (único interesado extranjero; había anunciado USD 3.000 millones de inversión). Las notas atribuyen la decisión, según fuentes, al esquema de open access de los pliegos; los motivos no fueron explicados oficialmente. Sigue como principal candidato el consorcio ACA, AGD, Bunge, Cargill y Louis Dreyfus, que dijo que ofertará solo si las condiciones lo justifican (no confirmado).
