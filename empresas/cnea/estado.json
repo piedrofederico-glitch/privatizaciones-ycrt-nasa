@@ -1,6 +1,13 @@
 {
  "bora": {
+  "leido_pdf": {
+   "20261022": [
+    "primera",
+    "segunda"
+   ]
+  },
   "revisados": {},
+  "ultima_ok": "20261022",
   "vistos": {}
  },
  "contratar": {
