@@ -20,7 +20,8 @@ cd /home/user/privatizaciones-ycrt-nasa
 python3 -I herramientas/bora.py escanear $(for e in empresas/*/; do printf -- '--empresa %s ' "$e"; done) --salida /home/user/salida --dias D
 ```
 Deja `/home/user/salida/<empresa>/bora.json` con las coincidencias nuevas de cada empresa.
-Revisa la primera sección completa y, de la segunda (sociedades), los edictos cuya razón social coincide con los términos. Si el BORA no responde, la primera sección del día se revisa en BOA (https://boa.com.ar/, solo respaldo: resúmenes sin texto oficial ni PDF) y la segunda queda para que los subagentes la busquen por la web. Cuando el BORA vuelve, el escáner retrocede solo hasta el último día que pudo leer (máximo 7). Si el BORA falló, empezá el resumen final con "BORA CAÍDO: revisado en BOA".
+Revisa la primera sección completa y, de la segunda (sociedades), los edictos cuya razón social coincide con los términos. Si el BORA no responde (desde el 21/10/2026 corta las conexiones de los entornos cloud), usa el PDF del día de ARSAT (texto oficial de las dos secciones, solo la edición del día) y, si eso también falla, BOA para la primera sección (resúmenes sin texto oficial). Cuando el BORA vuelve, el escáner retrocede solo hasta el último día que pudo leer (máximo 7). Si se usó un respaldo, empezá el resumen final con "BORA CAÍDO: revisado en ARSAT" (o "en BOA").
+Como ARSAT solo tiene la edición del día, **el turno de la mañana es el único que garantiza leer el BORA del día**: si falla, el de la tarde lo reintenta.
 
 ## 3. Subagentes en paralelo
 Lanzá con la herramienta Agent un subagente por empresa, **todos en el mismo mensaje** para que corran en paralelo. Prompt de cada uno:
