@@ -44,7 +44,9 @@ Si un hecho cambia la situación de base, actualizá también `contexto.md`.
 ## 5. Mail
 Siempre sale un mail, haya o no novedades.
 
-**Sin novedades:** mandá un mail corto. Elegí una frase al azar con `shuf -n1 R/docs/frases-sin-novedades.txt` (o inventá una del mismo tono: breve, medio irónica, con un emoji). Armá `/home/user/salida/E/mail.html` con la frase en un `<p>`, debajo una línea con lo revisado (por ejemplo "Revisado: BORA (o respaldo usado), CONTRAT.AR, prensa") y, si los hubo, los errores en una línea. Esta frase es la única excepción a las reglas de redacción de `CLAUDE.md`.
+**Sin novedades:** mandá un mail corto con una frase **inventada para esta corrida** sobre la empresa que seguís: su actividad, su historia, su geografía o el estado de su privatización según `contexto.md` y `registro.md`. Una sola oración, ingenio seco e inteligente, con un emoji al final. Evitá el juego de palabras obvio o de manual. Nada que se burle de trabajadores, de personas concretas ni de partidos políticos: el mail llega a un estudio jurídico. `R/docs/frases-sin-novedades.txt` marca el tono; no copies esas frases.
+No repitas: leé `R/empresas/E/frases-usadas.txt` (si no existe, crealo) y agregá al final tu frase en una línea con la fecha y el turno, por ejemplo `23/10/2026 18:00 · <frase>`. El orquestador lo commitea junto con el resto de `empresas/`.
+Armá `/home/user/salida/E/mail.html` con la frase en un `<p>`, debajo una línea con lo revisado (por ejemplo "Revisado: BORA (o respaldo usado), CONTRAT.AR, prensa") y, si los hubo, los errores en una línea. La frase es la única excepción a las reglas de redacción de `CLAUDE.md`.
 ```
 python3 -I R/herramientas/mail.py --para pedro.rossaroli@mitranicaballero.com \
   --asunto "[<Nombre corto de la empresa>] <la frase> · DD/MM/AAAA HH:MM" \
