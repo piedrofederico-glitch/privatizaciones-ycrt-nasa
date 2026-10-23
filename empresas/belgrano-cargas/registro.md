@@ -4,6 +4,12 @@ Entradas más recientes arriba. Cada entrada resume un documento o hecho nuevo; 
 
 <!-- nuevas entradas debajo de esta línea -->
 
+## 23/10/2026 · Circular aclaratoria con consulta · Circular 2, Licitación 504/2-0004-LPU26
+- **Fuente:** CONTRAT.AR proceso 504/2-0004-LPU26 (expediente EX-2026-77522689- -APN-UEETATEP#MEC) | ficha: https://www.contratar.gob.ar/PLIEGO/VistaPreviaPliegoCiudadano.aspx?qs=BQoBkoMoEhx|d/hWvcR5ioXEEg3aD9Wie/dpnGZJf/hlXIel3Hw2tKzPcNy6Pg6Wbh5PiFKTquSqgJhyOWpsW|RuwlzCCHtzHnHla9mi/mphhBvLHaFZdd0FYjQOlyBTq4gjMABzrEIa93HJX7hgwgDvuzB8TyvfBv1H|iV5a/sD2apXZ6kM/xi2DZ/KMLlDHQmJvGrWB4waAuW1FUhFzQ==
+- **Qué dice:** **Publicada el 23/10/2026 la Circular 2 "Aclaratoria con consulta"**, que responde las Consultas Nros. 2, 4 a 6, 11 a 14, 18, 22, 25, 28, 31, 33, 34, 35, 39, 42, 44, 45, 48, 50, 53, 54, 55, 57, 58, 63, 64, 67 y 69 de los participantes, mediante el anexo Circ.Acl.N°2 (PLIEG-2026-103409222-APN-ST#MEC). La ficha menciona consultas hasta el Nº 69. El contenido de las respuestas está en el anexo PDF, que la herramienta no bajó; este registro resume solo la ficha. La circular no modifica el cronograma publicado en la ficha.
+- **Próximos pasos:** consultas hasta 28/10/2026 10:00; ofertas hasta 11/11/2026 09:59; apertura 11/11/2026 10:00.
+- **PDF enviado por mail:** no se adjuntó (anexo no descargado; disponible en la ficha de CONTRAT.AR)
+
 ## 21/10/2026 · Presentación judicial anunciada y ordenanza municipal · Ordenanza 022/2026 de Tafí Viejo
 - **Fuente:** Nexos Digital | https://nexosdigital.com.ar/2026/10/21/tafi-viejo-recurrira-a-la-justicia-federal-para-impedir-que-los-talleres-ferroviarios-sean-privatizados/ ; La Gaceta | https://www.lagaceta.com.ar/nota/1158906/politica/tafi-viejo-prepara-accion-judicial-para-defender-talleres-ferroviarios.html
 - **Qué dice:** El Concejo Deliberante de Tafí Viejo (Tucumán) aprobó por unanimidad (12 concejales, sesión extraordinaria de un lunes, probablemente 19/10/2026, fecha inferida) la **Ordenanza 022/2026**, que habilita a la Municipalidad a ir a la Justicia contra la Resolución 1761/2026 del Ministerio de Economía. **Anunciada:** la Municipalidad presentaría una acción en la Justicia Federal "en los próximos días" para impedir que los Talleres Ferroviarios (unas 23 ha) se incorporen a la privatización de BCyL; si la Nación mantiene la medida, promovería un amparo por su nulidad. Reclama además aclarar la titularidad del predio (donación a la Provincia acordada en los años 90 y nunca formalizada). Aún no se informa juzgado ni expediente.
