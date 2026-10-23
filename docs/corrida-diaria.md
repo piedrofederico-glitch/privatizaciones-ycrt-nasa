@@ -41,8 +41,17 @@ Por cada novedad, agregá una entrada en `R/empresas/E/registro.md` debajo de la
 ```
 Si un hecho cambia la situación de base, actualizá también `contexto.md`.
 
-## 5. Mail (solo si hubo novedades)
-Si no hubo ninguna novedad, no mandes mail.
+## 5. Mail
+Siempre sale un mail, haya o no novedades.
+
+**Sin novedades:** mandá un mail corto. Elegí una frase al azar con `shuf -n1 R/docs/frases-sin-novedades.txt` (o inventá una del mismo tono: breve, medio irónica, con un emoji). Armá `/home/user/salida/E/mail.html` con la frase en un `<p>`, debajo una línea con lo revisado (por ejemplo "Revisado: BORA (o respaldo usado), CONTRAT.AR, prensa") y, si los hubo, los errores en una línea. Esta frase es la única excepción a las reglas de redacción de `CLAUDE.md`.
+```
+python3 -I R/herramientas/mail.py --para pedro.rossaroli@mitranicaballero.com \
+  --asunto "[<Nombre corto de la empresa>] <la frase> · DD/MM/AAAA HH:MM" \
+  --html /home/user/salida/E/mail.html
+```
+
+**Con novedades:**
 Armá `/home/user/salida/E/mail.html` con un bloque por novedad (mismo contenido que el registro, en HTML simple: `<h3>`, `<p>`, `<ul>`, `<b>`, `<a>`) y una sección final "Fuentes" con el formato Medio | Título (con link) | DD/MM/AAAA. Mandalo con los documentos de las novedades:
 ```
 python3 -I R/herramientas/mail.py --para pedro.rossaroli@mitranicaballero.com \

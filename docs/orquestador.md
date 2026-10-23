@@ -36,4 +36,4 @@ cd /home/user/privatizaciones-ycrt-nasa && git add empresas && git commit -m "co
 Commiteá siempre que haya cambios en `estado.json`, aunque no haya novedades: es la memoria de la próxima corrida. Si el push falla por un conflicto, repetí `git pull --rebase origin main` y `git push` (hasta 4 intentos).
 
 ## 5. Resumen final
-Una línea por empresa (novedades o "sin novedades", mail enviado y adjuntos), más errores. Si algún subagente devolvió "MAIL NO ENVIADO", empezá el resumen con eso y las novedades con sus links. Ese resumen llega como notificación al celular.
+Una línea por empresa (novedades o "sin novedades", mail enviado y adjuntos; el mail sale siempre), más errores. Si algún subagente devolvió "MAIL NO ENVIADO", empezá el resumen con eso y las novedades con sus links. Ese resumen llega como notificación al celular.
