@@ -1,6 +1,6 @@
 # Seguimiento de privatizaciones: termoeléctricas, ENARSA, NASA, CNEA, YCRT, Belgrano Cargas
 
-Una tarea programada orquestadora corre de lunes a viernes en tres turnos (mails a las 06:00, 15:30 y 18:00) y sigue `docs/orquestador.md`: escanea el BORA una vez para todas las empresas, lanza un subagente por empresa en paralelo (cada uno sigue `docs/corrida-diaria.md` con su carpeta de `empresas/`) y hace un único commit y push. A las 09:00, el turno DL reenvía lo registrado a DL-PDT, sin ironías ni adjuntos (`docs/dl.md`).
+Una tarea programada orquestadora corre de lunes a viernes en tres turnos (mails a las 06:00, 15:30 y 18:00) y sigue `docs/orquestador.md`: escanea el BORA una vez para todas las empresas, lanza un subagente por empresa en paralelo (cada uno sigue `docs/corrida-diaria.md` con su carpeta de `empresas/`) y hace un único commit y push. A las 09:00, el turno DL manda a DL-PDT un mail único y sintético por proceso madre (`docs/dl.md`).
 
 Destinatario: Pedro, estudiante de derecho en un estudio jurídico de Buenos Aires. Usa los mails como insumo propio y decide qué lleva al Comité del estudio.
 
