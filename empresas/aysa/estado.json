@@ -1,0 +1,59 @@
+{
+ "bora": {
+  "leido_pdf": {
+   "20261022": [
+    "primera",
+    "segunda"
+   ],
+   "20261023": [
+    "primera",
+    "segunda"
+   ],
+   "20261026": [
+    "primera",
+    "segunda"
+   ]
+  },
+  "revisados": {},
+  "ultima_ok": "20261026",
+  "vistos": {}
+ },
+ "contratar": {
+  "descartados": [],
+  "procesos": {
+   "504/2-0003-LPU26": {
+    "desde": "2026-10-26",
+    "estado": "Con Documento Contractual",
+    "nombre": "Venta del 90% del paquete accionario de AySA de titularidad del Estado Nacional",
+    "termino": "AySA",
+    "ultima_revision": "2026-10-26",
+    "vistos": {
+     "acta_apertura:1º Acta de Apertura Acta de Apertura de Mejora de Precios 15/9/2026": "2026-10-26",
+     "acta_apertura:2º Acta de Apertura Acta de Apertura de Mejora de Precios 8/10/2026": "2026-10-26",
+     "acto:Adjudicación RS-2026-102186966-APN-MEC RESOL-2026-1818-MEC 20/10/2026": "2026-10-26",
+     "acto:Adjudicación RS-2026-102186966-APN-MEC RESOL-2026-1818-MEC 20/10/2026 #2": "2026-10-26",
+     "acto:Autorización Apertura 2º Etapa RS-2026-96895059-APN-MEC RESOL-2026-1722-MEC 05/10/2026": "2026-10-26",
+     "acto:Autorización Dictamen de 1º Preselección RS-2026-96895059-APN-MEC RESOL-2026-1722-MEC 05/10/2026": "2026-10-26",
+     "acto:Autorización llamado RS-2026-48270198-APN-MEC RESOL-2026-704-MEC 14/05/2026": "2026-10-26",
+     "acto:Autorización pliego RS-2026-48270198-APN-MEC RESOL-2026-704-MEC 14/05/2026": "2026-10-26",
+     "anexo:PLIEG-2026-81677372-APN-SOP%MEC.pdf Otros Circular N° 9 Modificatoria - PLIEG-2026-81677372-APN-SOP#MEC": "2026-10-26",
+     "anexo:RS-2026-81937715-APN-MEC Resolución AySA.pdf Otros Resolución N° 1386 del 25 de agosto de 2026 del Ministerio de Economía, aprueba Circular N° 9 Modificatoria.": "2026-10-26",
+     "circular:1 29/05/2026 Sin consulta": "2026-10-26",
+     "circular:10 31/08/2026 Con consulta": "2026-10-26",
+     "circular:11 04/09/2026 Con consulta": "2026-10-26",
+     "circular:2 16/07/2026 Con consulta": "2026-10-26",
+     "circular:3 24/07/2026 Con consulta": "2026-10-26",
+     "circular:4 31/07/2026 Con consulta": "2026-10-26",
+     "circular:5 04/08/2026 Con consulta": "2026-10-26",
+     "circular:6 12/08/2026 Con consulta": "2026-10-26",
+     "circular:7 14/08/2026 Con consulta": "2026-10-26",
+     "circular:8 21/08/2026 Con consulta": "2026-10-26",
+     "circular:9 26/08/2026 Sin consulta": "2026-10-26",
+     "condiciones_generales:Condiciones Generales PLIEG-2026-47901673-APN-SOP#MEC 14/05/2026": "2026-10-26",
+     "dictamen_preadjudicacion:Dictamen de preadjudicación 8/10/2026 Autorizado": "2026-10-26",
+     "dictamen_preseleccion:Dictamen de 1º Preselección 24/09/2026 09:46:13 p.m. 25/09/2026 12:00:00 a.m. Autorizado": "2026-10-26"
+    }
+   }
+  }
+ }
+}

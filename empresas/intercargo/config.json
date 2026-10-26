@@ -1,0 +1,19 @@
+{
+ "nombre": "Intercargo S.A.U.",
+ "terminos_contratar": [
+  "Intercargo",
+  "servicios de rampa",
+  "asistencia en tierra"
+ ],
+ "terminos_bora": [
+  "Intercargo",
+  "504/2-0002-LPU26",
+  "servicios?\\s+de\\s+rampa",
+  "asistencia\\s+en\\s+tierra"
+ ],
+ "excluir_procesos": [
+  "504/2-0001-CPU25",
+  "504/2-0002-CPU25",
+  "504/2-0003-LPU26"
+ ]
+}

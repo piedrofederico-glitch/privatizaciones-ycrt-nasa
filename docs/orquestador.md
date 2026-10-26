@@ -10,7 +10,7 @@ Corre de lunes a viernes en tres turnos. La hora límite es la hora a la que tie
 
 Además, a las 08:20 corre el **turno DL**: no busca nada y sigue `docs/dl.md` (mail único de las 09:00 para DL-PDT, sintetizado de lo ya registrado).
 
-Empresas: `termoelectricas`, `enarsa`, `nasa`, `cnea`, `ycrt`, `belgrano-cargas` (todas las carpetas de `empresas/`).
+Empresas: `termoelectricas`, `enarsa`, `nasa`, `cnea`, `ycrt`, `belgrano-cargas`, `aysa`, `intercargo` (todas las carpetas de `empresas/`).
 
 ## 1. Repo
 El repo `piedrofederico-glitch/privatizaciones-ycrt-nasa` tiene que estar en `/home/user/privatizaciones-ycrt-nasa` con permiso de escritura. Pasá a main y actualizá: `git checkout main && git pull --rebase origin main`. Si no está clonado y existe la herramienta `mcp__claude-code-remote__add_repo`, usala (access "push") y clonalo.

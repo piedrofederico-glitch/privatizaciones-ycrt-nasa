@@ -1,0 +1,22 @@
+{
+ "nombre": "Agua y Saneamientos Argentinos S.A. (AySA)",
+ "terminos_contratar": [
+  "AySA",
+  "Agua y Saneamientos",
+  "Saneamientos Argentinos"
+ ],
+ "terminos_bora": [
+  "\\bAySA\\b",
+  "Agua\\s+y\\s+Saneamientos\\s+Argentinos",
+  "504/2-0003-LPU26",
+  "Rowing",
+  "Arcos\\s+Saneamento",
+  "PHX\\s+Aqua",
+  "Transclor"
+ ],
+ "excluir_procesos": [
+  "504/2-0001-CPU25",
+  "504/2-0002-CPU25",
+  "504/2-0002-LPU26"
+ ]
+}

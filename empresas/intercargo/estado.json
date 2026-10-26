@@ -1,0 +1,50 @@
+{
+ "bora": {
+  "leido_pdf": {
+   "20261022": [
+    "primera",
+    "segunda"
+   ],
+   "20261023": [
+    "primera",
+    "segunda"
+   ],
+   "20261026": [
+    "primera",
+    "segunda"
+   ]
+  },
+  "revisados": {},
+  "ultima_ok": "20261026",
+  "vistos": {}
+ },
+ "contratar": {
+  "descartados": [],
+  "procesos": {
+   "504/2-0002-LPU26": {
+    "desde": "2026-10-26",
+    "estado": "Desierto",
+    "nombre": "Venta del 100% del paquete accionario de Intercargo S.A.U. de titularidad del Estado Nacional.",
+    "termino": "Intercargo",
+    "ultima_revision": "2026-10-26",
+    "vistos": {
+     "acta_apertura:1º Acta de Apertura Acta de Apertura de Mejora de Precios 25/6/2026": "2026-10-26",
+     "acto:Autorización circular RS-2026-49015296-APN-MEC RESOL-2026-707-MEC 14/04/2026": "2026-10-26",
+     "acto:Autorización circular RS-2026-49015296-APN-MEC RESOL-2026-707-MEC 18/05/2026": "2026-10-26",
+     "acto:Autorización llamado RS-2026-23869790-APN-MEC RESOL-2026-282-MEC 25/03/2026": "2026-10-26",
+     "acto:Autorización pliego RS-2026-23869790-APN-MEC RESOL-2026-282-MEC 25/03/2026": "2026-10-26",
+     "anexo:PLIEG-2026-37118838-APN-ST%MEC.pdf Otros Circular N° 1 Modificatoria (PLIEG-2026-37118838-APN-ST#MEC).": "2026-10-26",
+     "anexo:PLIEG-2026-48825553-APN-ST%MEC.pdf Otros Circular N° 2 Modificatoria (PLIEG-2026-48825553-APN-ST#MEC).": "2026-10-26",
+     "anexo:PLIEG-2026-55991492-APN-ST%MEC.pdf Otros Circular N° 4 Modificatoria (PLIEG-2026-55991492-APN-ST#MEC).": "2026-10-26",
+     "anexo:RS-2026-56421600-APN-MEC.pdf Otros Resolución N° 833 del 8 de junio de 2026 del Ministerio de Economía": "2026-10-26",
+     "circular:1 16/04/2026 Sin consulta": "2026-10-26",
+     "circular:2 19/05/2026 Con consulta": "2026-10-26",
+     "circular:3 04/06/2026 Con consulta": "2026-10-26",
+     "circular:4 09/06/2026 Sin consulta": "2026-10-26",
+     "circular:5 17/06/2026 Con consulta": "2026-10-26",
+     "condiciones_generales:Condiciones Generales PLIEG-2026-23163876-APN-ST#MEC 25/03/2026": "2026-10-26"
+    }
+   }
+  }
+ }
+}

@@ -14,9 +14,10 @@ import argparse, datetime, hashlib, json, os, re, subprocess, sys, time
 
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Se manda a la cuenta del estudio; una regla de Outlook lo reenvía a DL-PDT@mitranicaballero.com
-PARA, ASUNTO = 'pedro.rossaroli@mitranicaballero.com', 'Privatizaciones'
+PARA, ASUNTO = 'pedro.rossaroli@mitranicaballero.com', 'Privatizaciones - Resumen PDT'
 GRUPOS = [('ENARSA', ['enarsa', 'termoelectricas']), ('NASA', ['nasa']), ('CNEA', ['cnea']),
-          ('YCRT', ['ycrt']), ('BCyL', ['belgrano-cargas'])]
+          ('YCRT', ['ycrt']), ('BCyL', ['belgrano-cargas']),
+          ('AySA', ['aysa']), ('Intercargo', ['intercargo'])]
 BA = datetime.timezone(datetime.timedelta(hours=-3))
 MARCA = '<!-- nuevas entradas debajo de esta línea -->'
 

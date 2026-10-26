@@ -1,0 +1,18 @@
+# Agua y Saneamientos Argentinos S.A. (AySA)
+
+## Situación al 26/10/2026
+- **Venta del 90% del paquete accionario** (135.000 acciones Clase A) por Licitación Pública Nacional e Internacional **504/2-0003-LPU26** de la ATEP (CONTRAT.AR, estado "Con Documento Contractual"). Base: Ley 27742 (Ley Bases). El 10% restante corresponde al Programa de Propiedad Participada (no verificado en esta carga).
+- **Ofertas:** sobre técnico abierto a comienzos de octubre de 2026 con dos consorcios precalificados. Apertura de ofertas económicas el 08/10/2026 10:00: consorcio **Rowing S.A., Arcos Saneamento e Participações S.A., PHX Aqua AR B.V. y Transclor S.A.** ofreció USD 340.200.000; consorcio Roggio (Roggio Roas, Hidrosan Capital, Aguas del Plata Participaciones, Benito Roggio e Hijos y Central Buen Ayre) ofreció USD 285 millones.
+- **Adjudicación:** Resolución 1818/2026 del Ministerio de Economía (BO 22/10/2026) adjudicó al consorcio Rowing por USD 340.200.000 sin IVA. Sin impugnaciones al dictamen de evaluación dentro del plazo. **Plazo para firmar el contrato de compraventa: 13/11/2026.** Toma de posesión estimada por prensa para enero o febrero de 2027 (no oficial). Obligación de inversión informada: más de USD 2.000 millones en cinco años.
+- **Documento contractual 504/2-1342-CON26** (ROWING S.A., USD 340.200.000) figura en la ficha de CONTRAT.AR en estado "Guardado", sin fecha de perfeccionamiento al 26/10/2026. Revisá en cada corrida ese renglón de `ficha.txt`: el paso a "Perfeccionado" (o una fecha de perfeccionamiento) es la firma y es novedad.
+- **Cautelar de la Defensoría del Pueblo bonaerense:** un juzgado contencioso administrativo provincial (La Plata) ordenó en junio de 2026 que AySA no modifique, reduzca ni suspenda obligaciones de acceso al agua potable, salud pública y ambiente, incluidas obras pendientes y estándares de calidad del futuro operador. La Cámara de Apelación en lo Contencioso Administrativo de La Plata la confirmó el 08/09/2026 y en septiembre de 2026 denegó los recursos extraordinarios de AySA. La Justicia provincial se declaró incompetente y remitió la causa al **Juzgado Federal N° 2 de La Plata, Secretaría N° 4**, que debe pronunciarse sobre la vigencia de la cautelar (Ley 26854). Sin número de expediente informado.
+- **Amparo de legisladores de la Bicameral de Seguimiento de Privatizaciones** (entre ellos Bahl y Capitanich), presentado alrededor del 06/10/2026 contra la ATEP para acceder a la tasación: **Juzgado Nacional en lo Contencioso Administrativo Federal N° 3, expediente CAF 49549/2026**. Piden una medida de no innovar que suspenda la adjudicación. Sin resolución informada al 26/10/2026.
+- Prensa menciona cuestionamientos por conflictos de intereses y un pedido de investigación de la valuación, sin denuncia penal identificada (no verificado).
+- Los documentos que ya tenía la ficha de CONTRAT.AR al 26/10/2026 quedaron registrados como vistos (línea de base): solo se reportan los nuevos.
+
+## Búsquedas web sugeridas
+"AySA privatización", "504/2-0003-LPU26", "AySA contrato compraventa firma", "AySA Rowing Transclor", "AySA cautelar Defensoría juzgado federal La Plata", "AySA amparo CAF 49549/2026", "AySA toma de posesión", "AySA denuncia privatización", "AySA ente regulador ERAS concesión".
+Medios: Ámbito, Infobae, La Nación, Clarín, Perfil, Página 12, Tiempo Argentino, La Política Online, Parlamentario, Palabras del Derecho, Diario Judicial. Oficiales: argentina.gob.ar (ATEP), BORA, CONTRAT.AR.
+
+## Jurisdicciones a vigilar (iniciativas legislativas)
+Congreso de la Nación. Legislatura de la Provincia de Buenos Aires y Legislatura de la Ciudad de Buenos Aires. Concejos deliberantes de los partidos del área de concesión.

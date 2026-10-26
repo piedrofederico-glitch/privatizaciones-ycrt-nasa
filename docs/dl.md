@@ -2,11 +2,11 @@
 
 Lo manda el turno de las 08:20 de la tarea orquestadora, de lunes a viernes. No hace búsquedas nuevas: sintetiza lo que ya está en `contexto.md` y `registro.md`. Los mails a Pedro de las 06:00, 15:30 y 18:00 no cambian.
 
-- **Destino:** un único mail a pedro.rossaroli@mitranicaballero.com con asunto `Privatizaciones`. Una regla de Outlook de esa cuenta lo reenvía a DL-PDT@mitranicaballero.com (la lista rechaza remitentes externos).
+- **Destino:** un único mail a pedro.rossaroli@mitranicaballero.com con asunto `Privatizaciones - Resumen PDT`. Una regla de Outlook de esa cuenta (asunto que incluye "Resumen PDT") lo reenvía a DL-PDT@mitranicaballero.com (la lista rechaza remitentes externos).
 - **Ventana:** las entradas del registro que todavía no se informaron (desde el mail de las 09:00 anterior; los lunes, desde el viernes). Estado en `empresas/<empresa>/dl.json`.
 
 ## Formato
-Un párrafo por proceso madre, siempre en este orden y aunque no haya novedades: **ENARSA** (incluye las termoeléctricas), **NASA**, **CNEA**, **YCRT**, **BCyL**.
+Un párrafo por proceso madre, siempre en este orden y aunque no haya novedades: **ENARSA** (incluye las termoeléctricas), **NASA**, **CNEA**, **YCRT**, **BCyL**, **AySA**, **Intercargo**.
 ```
 <p><b>BCyL:</b> Sin novedades. Las consultas finalizan el 28/10/2026. Las ofertas se presentan hasta el 11/11/2026. La apertura de ofertas es el 11/11/2026 a las 10:00.</p>
 <p><b>NASA:</b> Sin novedades. No existe licitación abierta.</p>

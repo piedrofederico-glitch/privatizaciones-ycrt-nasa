@@ -1,6 +1,6 @@
 # Corrida de una empresa (subagente)
 
-Lo ejecuta un subagente lanzado por el orquestador (`docs/orquestador.md`), uno por empresa y en paralelo. `E` es la carpeta de la empresa (`termoelectricas`, `enarsa`, `nasa`, `cnea`, `ycrt` o `belgrano-cargas`). El repo está en `/home/user/privatizaciones-ycrt-nasa` (en adelante `R`). Los documentos bajados van a `/home/user/salida/E/`, **fuera del repo**: nunca los commitees. **No hagas commit ni push**: lo hace el orquestador al final.
+Lo ejecuta un subagente lanzado por el orquestador (`docs/orquestador.md`), uno por empresa y en paralelo. `E` es la carpeta de la empresa (`termoelectricas`, `enarsa`, `nasa`, `cnea`, `ycrt`, `belgrano-cargas`, `aysa` o `intercargo`). El repo está en `/home/user/privatizaciones-ycrt-nasa` (en adelante `R`). Los documentos bajados van a `/home/user/salida/E/`, **fuera del repo**: nunca los commitees. **No hagas commit ni push**: lo hace el orquestador al final.
 
 El orquestador te pasa la **hora límite del mail** (06:00, 15:30 o 18:00). El mail tiene que salir antes de esa hora aunque no hayas terminado las búsquedas web: priorizá BORA y CONTRAT.AR.
 
