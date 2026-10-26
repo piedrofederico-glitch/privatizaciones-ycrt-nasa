@@ -8,6 +8,8 @@ Corre de lunes a viernes en tres turnos. La hora límite es la hora a la que tie
 | Tarde | 14:50 | 15:30 | 0 |
 | Noche | 17:20 | 18:00 | 0 |
 
+Además, a las 08:20 corre el **turno DL**: no busca nada y sigue `docs/dl.md` (mail de las 09:00 a DL-PDT con lo ya registrado).
+
 Empresas: `termoelectricas`, `enarsa`, `nasa`, `cnea`, `ycrt`, `belgrano-cargas` (todas las carpetas de `empresas/`).
 
 ## 1. Repo

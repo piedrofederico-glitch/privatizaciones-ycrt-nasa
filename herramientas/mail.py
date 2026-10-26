@@ -2,7 +2,7 @@
 """Envía un mail con adjuntos por la API de Gmail (HTTPS). Solo biblioteca estándar.
 
 Uso:
-  mail.py --para DIRECCION --asunto TEXTO --html ARCHIVO.html [--adjunto RUTA ...] [--simular DIR]
+  mail.py --para DIRECCION [--cc DIRECCION] --asunto TEXTO --html ARCHIVO.html [--adjunto RUTA ...] [--simular DIR]
 
 Credenciales (variables de entorno del entorno de Claude Code, ver docs/configurar-gmail.md):
   GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN
@@ -42,9 +42,11 @@ def lotes(adjuntos):
     return out + [actual] if actual or not out else out
 
 
-def armar(para, asunto, cuerpo, adjuntos):
+def armar(para, asunto, cuerpo, adjuntos, cc=None):
     m = EmailMessage()
     m['To'], m['Subject'] = para, asunto
+    if cc:
+        m['Cc'] = cc
     m.set_content('Este mail tiene formato HTML.')
     m.add_alternative(cuerpo, subtype='html')
     for p, b in adjuntos:
@@ -56,6 +58,7 @@ def armar(para, asunto, cuerpo, adjuntos):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--para', required=True); ap.add_argument('--asunto', required=True)
+    ap.add_argument('--cc', help='direcciones en copia, separadas por coma')
     ap.add_argument('--html', required=True); ap.add_argument('--adjunto', action='append', default=[])
     ap.add_argument('--simular', help='en vez de enviar, guarda los .eml en este directorio')
     a = ap.parse_args()
@@ -64,7 +67,7 @@ def main():
     tok = None if a.simular else token()
     for i, adj in enumerate(partes, 1):
         asunto = a.asunto + (f' (parte {i} de {len(partes)})' if len(partes) > 1 else '')
-        m = armar(a.para, asunto, cuerpo if i == 1 else f'<p>Continuación de los adjuntos: {asunto}</p>', adj)
+        m = armar(a.para, asunto, cuerpo if i == 1 else f'<p>Continuación de los adjuntos: {asunto}</p>', adj, a.cc)
         if a.simular:
             os.makedirs(a.simular, exist_ok=True)
             open(os.path.join(a.simular, f'mail_{i}.eml'), 'wb').write(bytes(m))
