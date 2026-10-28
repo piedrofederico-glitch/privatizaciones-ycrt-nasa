@@ -16,10 +16,14 @@
    "20261027": [
     "primera",
     "segunda"
+   ],
+   "20261028": [
+    "primera",
+    "segunda"
    ]
   },
   "revisados": {},
-  "ultima_ok": "20261027",
+  "ultima_ok": "20261028",
   "vistos": {
    "349190": "20261019"
   }
@@ -32,7 +36,7 @@
     "estado": "Publicado",
     "nombre": "Concesión de vías e inmuebles aledaños de LB, LSM y LU.",
     "termino": "inmuebles aledaños",
-    "ultima_revision": "2026-10-27",
+    "ultima_revision": "2026-10-28",
     "vistos": {
      "acto:Autorización llamado RS-2026-79872275-APN-MEC RESOL-2026-1350-MEC 19/08/2026": "2026-10-21",
      "acto:Autorización pliego RS-2026-79872275-APN-MEC RESOL-2026-1350-MEC 19/08/2026": "2026-10-21",
