@@ -24,10 +24,14 @@
    "20261029": [
     "primera",
     "segunda"
+   ],
+   "20261030": [
+    "primera",
+    "segunda"
    ]
   },
   "revisados": {},
-  "ultima_ok": "20261029",
+  "ultima_ok": "20261030",
   "vistos": {}
  },
  "contratar": {
@@ -38,7 +42,7 @@
     "estado": "Desierto",
     "nombre": "Venta del 100% del paquete accionario de Intercargo S.A.U. de titularidad del Estado Nacional.",
     "termino": "Intercargo",
-    "ultima_revision": "2026-10-29",
+    "ultima_revision": "2026-10-30",
     "vistos": {
      "acta_apertura:1º Acta de Apertura Acta de Apertura de Mejora de Precios 25/6/2026": "2026-10-26",
      "acto:Autorización circular RS-2026-49015296-APN-MEC RESOL-2026-707-MEC 14/04/2026": "2026-10-26",

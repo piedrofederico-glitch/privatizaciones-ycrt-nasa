@@ -24,10 +24,14 @@
    "20261029": [
     "primera",
     "segunda"
+   ],
+   "20261030": [
+    "primera",
+    "segunda"
    ]
   },
   "revisados": {},
-  "ultima_ok": "20261029",
+  "ultima_ok": "20261030",
   "vistos": {
    "e:80849/26": "20261029"
   }
@@ -40,7 +44,7 @@
     "estado": "Con Documento Contractual",
     "nombre": "Venta del 90% del paquete accionario de AySA de titularidad del Estado Nacional",
     "termino": "AySA",
-    "ultima_revision": "2026-10-29",
+    "ultima_revision": "2026-10-30",
     "vistos": {
      "acta_apertura:1º Acta de Apertura Acta de Apertura de Mejora de Precios 15/9/2026": "2026-10-26",
      "acta_apertura:2º Acta de Apertura Acta de Apertura de Mejora de Precios 8/10/2026": "2026-10-26",
