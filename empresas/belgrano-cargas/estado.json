@@ -36,12 +36,17 @@
    "20261103": [
     "primera",
     "segunda"
+   ],
+   "20261104": [
+    "primera",
+    "segunda"
    ]
   },
   "revisados": {},
-  "ultima_ok": "20261103",
+  "ultima_ok": "20261104",
   "vistos": {
-   "349190": "20261019"
+   "349190": "20261019",
+   "e:82674/26": "20261104"
   }
  },
  "contratar": {
@@ -52,7 +57,7 @@
     "estado": "Publicado",
     "nombre": "Concesión de vías e inmuebles aledaños de LB, LSM y LU.",
     "termino": "inmuebles aledaños",
-    "ultima_revision": "2026-11-03",
+    "ultima_revision": "2026-11-04",
     "vistos": {
      "acto:Autorización llamado RS-2026-79872275-APN-MEC RESOL-2026-1350-MEC 19/08/2026": "2026-10-21",
      "acto:Autorización pliego RS-2026-79872275-APN-MEC RESOL-2026-1350-MEC 19/08/2026": "2026-10-21",
@@ -63,8 +68,11 @@
      "anexo:PBCP - LU - PLIEG-2026-79596095-APN-ST#MEC.pdf Otros Pliego de Bases y Condiciones Particulares de la Línea Urquiza (PLIEG-2026-79596095-APN-ST#MEC)": "2026-10-21",
      "anexo:PBCP- LU - Anexo 9 - Planilla cotizacion LU .xlsx Otros Anexo 9 del Pliego de Bases y Condiciones Particulares de la Línea Urquiza (PLIEG-2026-79596095-APN-ST#MEC)": "2026-10-21",
      "anexo:PETG - PLIEG-2026-79596251-APN-ST#MEC.pdf Otros Pliego de Especificaciones Técnicas Generales (PLIEG-2026-79596251-APN-ST#MEC)": "2026-10-21",
+     "anexo:PLIEG-2026-106601680-APN-ST%MEC.pdf Otros Circular N° 3 Modificatoria - PLIEG-2026-106601680-APN-ST#MEC.": "2026-11-04",
+     "anexo:RS-2026-106876641-APN-MEC.pdf Otros Resolución N° 1914 de fecha 3 de noviembre de 2026 del Ministerio de Economía, que aprueba la Circular N° 3 Modificatoria.": "2026-11-04",
      "circular:1 31/08/2026 Sin consulta": "2026-10-21",
      "circular:2 23/10/2026 Con consulta": "2026-10-23",
+     "circular:3 04/11/2026 Con consulta": "2026-11-04",
      "condiciones_generales:Condiciones Generales PLIEG-2026-79595975-APN-ST#MEC 19/08/2026": "2026-10-21"
     }
    }
