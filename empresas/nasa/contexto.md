@@ -5,6 +5,7 @@
 - La **Res. 1751/2025** encomendó inventario, valuación y documentación licitatoria.
 - **Estatuto adecuado a la privatización** (edicto BORA segunda sección N° 77784/26, 21/10/2026): capital $6.693.899.891.000; clases A (Estado), B (privados) y C (PPP) con veto de la Clase A; acciones transferibles según Ley 27.742 y Decreto 695/2025. Tenencia actual: Estado 79%, CNEA 20%, ENARSA 1%. Ver registro.
 - Sin decreto de llamado, pliego ni cronograma. Vigilar en especial el decreto que dé inicio al procedimiento.
+- Amparos conocidos (prensa, noviembre de 2025): dos amparos colectivos contra el Decreto 695/2025, uno del concejal Fernando Martínez (Exaltación de la Cruz) ante el Juzgado Federal de Campana (Diario Jornada, 20/11/2025) y otro que Minutouno ubica en el Juzgado Federal N° 3 de Córdoba (las fuentes no aclaran qué juzgado corresponde a cada uno). Estado procesal no verificado.
 - Proyectos conocidos: Berni (Legislatura PBA, que la Provincia intervenga en el proceso), Propato (PBA, participación de Buenos Aires en la privatización parcial), Pagano (prohibición del "tejido militar-nuclear") y proyectos opositores en el Congreso para frenar la privatización.
 
 ## Búsquedas web sugeridas
