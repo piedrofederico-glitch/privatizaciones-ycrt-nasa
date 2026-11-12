@@ -1,10 +1,6 @@
 {
  "bora": {
   "leido_pdf": {
-   "20261022": [
-    "primera",
-    "segunda"
-   ],
    "20261023": [
     "primera",
     "segunda"
@@ -52,10 +48,14 @@
    "20261111": [
     "primera",
     "segunda"
+   ],
+   "20261112": [
+    "primera",
+    "segunda"
    ]
   },
   "revisados": {},
-  "ultima_ok": "20261111",
+  "ultima_ok": "20261112",
   "vistos": {
    "349418": "20261022",
    "e:78229/26": "20261022",
