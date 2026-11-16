@@ -21,10 +21,10 @@ directorios) trae cientos de avisos por día: de esa sección solo se abren los 
 del sumario (razón social) coincide con los términos; en el estado se guardan como "s2:<id>". --dias N revisa también los N días anteriores
 (útil los lunes o después de una corrida fallida).
 """
-import argparse, datetime, html, json, os, re, subprocess, sys, tempfile, time, urllib.request
+import argparse, datetime, html, json, os, re, subprocess, sys, tempfile, time, urllib.parse, urllib.request
 
 BASE = 'https://www.boletinoficial.gob.ar'
-op = urllib.request.build_opener()
+op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor())
 op.addheaders = [('User-Agent', 'Mozilla/5.0')]
 
 
@@ -54,8 +54,20 @@ def limpio(h):
 def sumario(fecha, seccion='primera'):
     """[(id, organismo, norma, codigo)] de esa sección y fecha."""
     t = get(f'/seccion/{seccion}/{fecha}')
+    # La página trae solo los primeros 100 avisos; el resto se carga por scroll infinito
+    # (/seccion/actualizar/<seccion>?pag=N&ult_rubro=..., atado a la fecha de la sesión).
+    m = re.search(r"var numeroPagina = (\d+);.*?var ultimoRubro = '([^']*)'", t, re.S)
+    pag, ult = (int(m.group(1)), m.group(2)) if m else (0, '')
+    for _ in range(60):
+        if not pag:
+            break
+        d = json.loads(get(f'/seccion/actualizar/{seccion}?pag={pag}&ult_rubro={urllib.parse.quote(ult)}'))
+        t += d.get('html') or ''
+        if not d.get('hay_mas_datos') or not d.get('sig_pag'):
+            break
+        pag, ult = d['sig_pag'], d.get('ult_rubro') or ''
     out = []
-    for m in re.finditer(rf'<a href="/detalleAviso/{seccion}/(\d+)/(\d{{8}})"[^>]*>(.*?)</a>', t, re.S):
+    for m in re.finditer(rf'<a href="/detalleAviso/{seccion}/([A-Z]?\d+)/(\d{{8}})"[^>]*>(.*?)</a>', t, re.S):
         if m.group(2) != fecha:
             continue
         ps = [limpio(p) for p in re.findall(r'(?s)<p[^>]*>(.*?)</p>', m.group(3))]
