@@ -12,7 +12,8 @@
   "Rowing",
   "Arcos\\s+Saneamento",
   "PHX\\s+Aqua",
-  "Transclor"
+  "Transclor",
+  "Compa\\S+a\\s+de\\s+Aguas\\s+del\\s+Plata"
  ],
  "excluir_procesos": [
   "504/2-0001-CPU25",
