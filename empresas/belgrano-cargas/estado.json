@@ -1,55 +1,15 @@
 {
  "bora": {
   "leido_pdf": {
-   "20261023": [
-    "primera",
-    "segunda"
-   ],
-   "20261026": [
-    "primera",
-    "segunda"
-   ],
-   "20261027": [
-    "primera",
-    "segunda"
-   ],
-   "20261028": [
-    "primera",
-    "segunda"
-   ],
-   "20261029": [
-    "primera",
-    "segunda"
-   ],
-   "20261030": [
-    "primera",
-    "segunda"
-   ],
-   "20261102": [
-    "primera",
-    "segunda"
-   ],
-   "20261103": [
-    "primera",
-    "segunda"
-   ],
-   "20261104": [
-    "primera",
-    "segunda"
-   ],
-   "20261105": [
-    "primera",
-    "segunda"
-   ],
-   "20261106": [
-    "primera",
-    "segunda"
-   ],
    "20261111": [
     "primera",
     "segunda"
    ],
    "20261112": [
+    "primera",
+    "segunda"
+   ],
+   "20261127": [
     "primera",
     "segunda"
    ]
@@ -678,11 +638,12 @@
     "350871"
    ]
   },
-  "ultima_ok": "20261126",
+  "ultima_ok": "20261127",
   "vistos": {
    "349190": "20261019",
    "350348": "20261116",
-   "e:82674/26": "20261104"
+   "e:82674/26": "20261104",
+   "e:88890/26": "20261127"
   }
  },
  "contratar": {
@@ -693,7 +654,7 @@
     "estado": "Publicado",
     "nombre": "Concesión de vías e inmuebles aledaños de LB, LSM y LU.",
     "termino": "inmuebles aledaños",
-    "ultima_revision": "2026-11-26",
+    "ultima_revision": "2026-11-27",
     "vistos": {
      "acto:Autorización llamado RS-2026-79872275-APN-MEC RESOL-2026-1350-MEC 19/08/2026": "2026-10-21",
      "acto:Autorización pliego RS-2026-79872275-APN-MEC RESOL-2026-1350-MEC 19/08/2026": "2026-10-21",

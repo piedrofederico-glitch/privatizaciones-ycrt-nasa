@@ -1,55 +1,15 @@
 {
  "bora": {
   "leido_pdf": {
-   "20261023": [
-    "primera",
-    "segunda"
-   ],
-   "20261026": [
-    "primera",
-    "segunda"
-   ],
-   "20261027": [
-    "primera",
-    "segunda"
-   ],
-   "20261028": [
-    "primera",
-    "segunda"
-   ],
-   "20261029": [
-    "primera",
-    "segunda"
-   ],
-   "20261030": [
-    "primera",
-    "segunda"
-   ],
-   "20261102": [
-    "primera",
-    "segunda"
-   ],
-   "20261103": [
-    "primera",
-    "segunda"
-   ],
-   "20261104": [
-    "primera",
-    "segunda"
-   ],
-   "20261105": [
-    "primera",
-    "segunda"
-   ],
-   "20261106": [
-    "primera",
-    "segunda"
-   ],
    "20261111": [
     "primera",
     "segunda"
    ],
    "20261112": [
+    "primera",
+    "segunda"
+   ],
+   "20261127": [
     "primera",
     "segunda"
    ]
@@ -670,7 +630,7 @@
     "350871"
    ]
   },
-  "ultima_ok": "20261126",
+  "ultima_ok": "20261127",
   "vistos": {
    "349418": "20261022",
    "350304": "20261113",
